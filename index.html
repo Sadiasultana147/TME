@@ -17,15 +17,16 @@
   <link href="./css/style.css?v=2.0.1" rel="stylesheet" />
 </head>
 <body>
-
+<header>
+	
 <!-- Navbar with 2 rows -->
-<nav class="navbar navbar-expand-lg navbar-dark flex-column">
+<nav class="navbar navbar-expand-lg navbar-dark flex-column fixed-top">
   <div class="container d-flex justify-content-between align-items-center">
     <!-- Logo and texts (upper row) -->
     <a href="index.html" class="navbar-brand">
       <img src="./images/logo.webp" alt="Logo" />
       <div class="brand-text">
-        <div class="line1">Department of Textile Materials Engineering</div>
+        <div class="line1"><em>Department of Textile Materials Engineering</em></div>
         <div class="line2">Bangladesh University of Textile (BUTEX)</div>
       </div>
     </a>
@@ -106,9 +107,294 @@
     </div>
   </div>
 </nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section id="hero-carousel" class="position-relative overflow-hidden" style="height: 90vh; min-height: 600px;">
+  <div id="fadeZoomCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="6000">
+    <div class="carousel-inner h-100">
 
+      <!-- Slide 1 -->
+      <div class="carousel-item active h-100">
+        <div class="carousel-bg zoom-animation" style="background-image: url('./images/hero-1.png');">
+          <div class="overlay"></div>
+          <div class="container hero-text text-center text-white d-flex flex-column justify-content-center h-100">
+            <h1 class="fw-bold display-5">Textile Materials Engineering</h1>
+            <p class="lead fs-4">Advancing Research and Innovation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item h-100">
+        <div class="carousel-bg zoom-animation" style="background-image: url('./images/hero-2.png');">
+          <div class="overlay"></div>
+          <div class="container hero-text text-center text-white d-flex flex-column justify-content-center h-100">
+            <h1 class="fw-bold display-5">State-of-the-Art Facilities</h1>
+            <p class="lead fs-4">Empowering Future Textile Professionals</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item h-100">
+        <div class="carousel-bg zoom-animation" style="background-image: url('./images/hero-3.png');">
+          <div class="overlay"></div>
+          <div class="container hero-text text-center text-white d-flex flex-column justify-content-center h-100">
+            <h1 class="fw-bold display-5">Global Collaborations</h1>
+            <p class="lead fs-4">Connecting Ideas, Creating Impact</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Optional: Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#fadeZoomCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#fadeZoomCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#fadeZoomCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-5" style="background-color: #f5f9f9;">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-4">
+      <i class="fas fa-university fa-3x mb-3" style="color: #0a9396;"></i>
+      <h2 class="fw-bold" style="color: #0a9396;">About Us</h2>
+    </div>
+    <p class="lead text-center mb-5" style="max-width: 900px; margin: 0 auto;">
+      The Department of Textile Materials Engineering at BUTEX is dedicated to advancing education, 
+      research, and industry engagement in the textile sector. 
+      We nurture skilled professionals ready to take on the challenges of a rapidly evolving global industry.
+    </p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 text-center border rounded shadow-sm h-100 bg-white hover-scale">
+          <i class="fas fa-book-open fa-2x mb-3" style="color: #0a9396;"></i>
+          <h5 class="fw-bold">Quality Education</h5>
+          <p>We offer a curriculum combining theory, practice, and innovation for holistic learning.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 text-center border rounded shadow-sm h-100 bg-white hover-scale">
+          <i class="fas fa-lightbulb fa-2x mb-3" style="color: #0a9396;"></i>
+          <h5 class="fw-bold">Research & Innovation</h5>
+          <p>Promoting cutting-edge research to address real-world textile challenges.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 text-center border rounded shadow-sm h-100 bg-white hover-scale">
+          <i class="fas fa-handshake fa-2x mb-3" style="color: #0a9396;"></i>
+          <h5 class="fw-bold">Industry Link</h5>
+          <p>Strong collaboration with national and international textile industries.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vision & Mission Section -->
+<section id="vision-mission" class="py-5 text-white" style="background-color: #0a9396;">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-4">
+      <i class="fas fa-eye fa-3x mb-3"></i>
+      <h2 class="fw-bold">Vision & Mission</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="p-4 h-100 bg-white text-dark rounded shadow-sm hover-scale">
+          <i class="fas fa-bullseye fa-2x mb-3" style="color: #0a9396;"></i>
+          <h4 class="fw-bold mb-3" style="color: #0a9396;">Our Vision</h4>
+          <ul class="list-unstyled mb-0">
+            <li><i class="fas fa-check text-success me-2"></i>Recognized as a global leader in textile education.</li>
+            <li><i class="fas fa-check text-success me-2"></i>Pioneering sustainable textile innovations.</li>
+            <li><i class="fas fa-check text-success me-2"></i>Fostering global research partnerships.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 h-100 bg-white text-dark rounded shadow-sm hover-scale">
+          <i class="fas fa-tasks fa-2x mb-3" style="color: #0a9396;"></i>
+          <h4 class="fw-bold mb-3" style="color: #0a9396;">Our Mission</h4>
+          <ul class="list-unstyled mb-0">
+            <li><i class="fas fa-check text-success me-2"></i>Provide high-quality, industry-relevant education.</li>
+            <li><i class="fas fa-check text-success me-2"></i>Advance textile research and innovation.</li>
+            <li><i class="fas fa-check text-success me-2"></i>Develop leaders for the textile sector.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Objectives Section -->
+<section id="objectives" class="py-5" style="background-color: #fdf4f4;">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-4">
+      <i class="fas fa-bullhorn fa-3x mb-3" style="color: #842020;"></i>
+      <h2 class="fw-bold" style="color: #842020;">Objectives</h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-6">
+        <div class="p-3 border rounded bg-white shadow-sm hover-scale h-100">
+          <i class="fas fa-user-graduate fa-2x mb-2" style="color: #842020;"></i>
+          <p>Produce skilled textile engineers with modern expertise.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="p-3 border rounded bg-white shadow-sm hover-scale h-100">
+          <i class="fas fa-flask fa-2x mb-2" style="color: #842020;"></i>
+          <p>Promote advanced research in textile materials.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="p-3 border rounded bg-white shadow-sm hover-scale h-100">
+          <i class="fas fa-handshake fa-2x mb-2" style="color: #842020;"></i>
+          <p>Strengthen industry-academia collaboration.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="p-3 border rounded bg-white shadow-sm hover-scale h-100">
+          <i class="fas fa-leaf fa-2x mb-2" style="color: #842020;"></i>
+          <p>Encourage sustainable textile production.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Responsibilities Section (Light Background) -->
+<section id="responsibilities" class="py-5 text-dark" style="background-color: #f7eaea;">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-4">
+      <i class="fas fa-tasks fa-3x mb-3" style="color: #842020;"></i>
+      <h2 class="fw-bold" style="color: #842020;">Our Responsibilities</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-white border rounded shadow-sm hover-scale h-100">
+          <i class="fas fa-chalkboard-teacher fa-2x mb-2" style="color: #842020;"></i>
+          <h5 class="fw-bold">Academic Excellence</h5>
+          <p>Deliver education aligned with industry and global standards.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-white border rounded shadow-sm hover-scale h-100">
+          <i class="fas fa-microscope fa-2x mb-2" style="color: #842020;"></i>
+          <h5 class="fw-bold">Research Leadership</h5>
+          <p>Conduct impactful research in textile materials engineering.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-white border rounded shadow-sm hover-scale h-100">
+          <i class="fas fa-lightbulb fa-2x mb-2" style="color: #842020;"></i>
+          <h5 class="fw-bold">Innovation Support</h5>
+          <p>Encourage creativity, entrepreneurship, and problem-solving skills.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-white border rounded shadow-sm hover-scale h-100">
+          <i class="fas fa-recycle fa-2x mb-2" style="color: #842020;"></i>
+          <h5 class="fw-bold">Sustainability</h5>
+          <p>Promote environmentally friendly textile practices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="academic-programs" class="py-5" style="background-color: #e8f0fe;">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-4">
+      <i class="fas fa-graduation-cap fa-3x mb-3" style="color: #1a237e;"></i>
+      <h2 class="fw-bold" style="color: #1a237e;">Academic Programs</h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="p-4 border rounded shadow-sm bg-white hover-scale h-100">
+          <i class="fas fa-book fa-2x mb-3" style="color: #1a237e;"></i>
+          <h5>Bachelor of Science</h5>
+          <p>Comprehensive undergraduate program in Textile Materials Engineering.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded shadow-sm bg-white hover-scale h-100">
+          <i class="fas fa-flask fa-2x mb-3" style="color: #1a237e;"></i>
+          <h5>Masters Program</h5>
+          <p>Advanced studies and research opportunities in textile science and technology.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded shadow-sm bg-white hover-scale h-100">
+          <i class="fas fa-user-graduate fa-2x mb-3" style="color: #1a237e;"></i>
+          <h5>PhD Program</h5>
+          <p>Doctoral research program fostering innovation and scholarly contributions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="research-areas" class="py-5" style="background-color: #fff3e0;">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-4">
+      <i class="fas fa-flask fa-3x mb-3" style="color: #ef6c00;"></i>
+      <h2 class="fw-bold" style="color: #ef6c00;">Research Areas</h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="p-4 border rounded shadow-sm bg-white hover-scale h-100">
+          <i class="fas fa-atom fa-2x mb-3" style="color: #ef6c00;"></i>
+          <h5>Fiber Science</h5>
+          <p>Exploring new fibers and their properties for innovative textiles.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded shadow-sm bg-white hover-scale h-100">
+          <i class="fas fa-industry fa-2x mb-3" style="color: #ef6c00;"></i>
+          <h5>Textile Manufacturing</h5>
+          <p>Optimizing production processes for quality and sustainability.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 border rounded shadow-sm bg-white hover-scale h-100">
+          <i class="fas fa-leaf fa-2x mb-3" style="color: #ef6c00;"></i>
+          <h5>Sustainable Textiles</h5>
+          <p>Developing eco-friendly materials and green manufacturing methods.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faculty" class="py-5" style="background-color: #e0f7fa;">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-4">
+      <i class="fas fa-users fa-3x mb-3" style="color: #006064;"></i>
+      <h2 class="fw-bold" style="color: #006064;">Our Faculty</h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <!-- Faculty Member 1 -->
+      <div class="col-md-3 text-center">
+        <img src="images/Dr.-Sheikh-Md.-Mamun-Kabir.webp" alt="Dr. Jane Doe" class="rounded-circle mb-3" style="width:150px; height:150px; object-fit:cover;" />
+        <h5>Dr.-Sheikh-Md.-Mamun-Kabir</h5>
+        <p>Professor & Head</p>
+      </div>
+      <!-- Faculty Member 2 -->
+      <div class="col-md-3 text-center">
+        <img src="images/Mustakimul-Syef.webp" alt="Dr. John Smith" class="rounded-circle mb-3" style="width:150px; height:150px; object-fit:cover;" />
+        <h5>Mustakimul-Syef</h5>
+        <p>Lecturer</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+</main>
 <!-- ================== FOOTER START ================== -->
-<footer class="text-white mt-5">
+<footer class="text-white">
   <!-- Top Footer -->
   <div class="py-5 border-bottom" style="background-color: #0a9396;">
     <div class="container">
@@ -125,6 +411,7 @@
         <!-- About Us -->
         <div class="col-lg-2 col-md-6">
           <h6 class="fw-bold mb-3 text-center text-lg-start">About us</h6>
+		  <hr class="footer-divider">
           <ul class="list-unstyled text-center text-lg-start">
             <li><a href="#" class="footer-link">Vision & Mission</a></li>
             <li><a href="#" class="footer-link">History</a></li>
@@ -137,6 +424,7 @@
         <!-- Academics -->
         <div class="col-lg-2 col-md-6">
           <h6 class="fw-bold mb-3 text-center text-lg-start">Academics</h6>
+		  <hr class="footer-divider">
           <ul class="list-unstyled text-center text-lg-start">
             <li><a href="#" class="footer-link">Academic Calendar</a></li>
             <li><a href="#" class="footer-link">Class Routine</a></li>
@@ -148,6 +436,7 @@
         <!-- Research -->
         <div class="col-lg-2 col-md-6">
           <h6 class="fw-bold mb-3 text-center text-lg-start">Research</h6>
+		  <hr class="footer-divider">
           <ul class="list-unstyled text-center text-lg-start">
             <li><a href="#" class="footer-link">Research Area</a></li>
             <li><a href="#" class="footer-link">Faculty</a></li>
@@ -158,6 +447,7 @@
         <!-- Admission -->
         <div class="col-lg-2 col-md-6">
           <h6 class="fw-bold mb-3 text-center text-lg-start">Admission</h6>
+		  <hr class="footer-divider">
           <ul class="list-unstyled text-center text-lg-start">
             <li><a href="#" class="footer-link">Undergraduate</a></li>
             <li><a href="#" class="footer-link">Postgraduate</a></li>
